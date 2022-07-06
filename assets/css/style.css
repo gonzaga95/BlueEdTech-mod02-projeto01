@@ -27,7 +27,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: #FAF9F6;
+    color: #faf9f6;
     font-size: 1.5rem;
 }
 
@@ -43,20 +43,40 @@ nav ul li {
 #perfil-foto {
     border-radius: 50%;
     max-width: 300px;
+    padding: 0 1.5rem;
+}
+
+a:hover {
+    text-shadow: 1px 1px black;
 }
 
 main {
     display: flex;
     flex-direction: column;
     margin: 2rem 8rem;
-    color: #FAF9F6;
+    color: #faf9f6;
 }
 
 main div#abertura {
-    padding: 0 5rem;
+    padding: 0 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 980px) {
+    main div#abertura {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main div#abertura h1 {
+        width: 100vw;
+    }
+}
+
+main div#abertura h1 {
+    width: 60%;
 }
 
 main section {
@@ -79,16 +99,11 @@ main section.tecnologias img {
 
 footer {
     text-align: center;
-    color: #FAF9F6;
+    color: #faf9f6;
     font-size: 1.2rem;
 }
 
 footer p a {
     text-decoration: none;
-    color: #FAF9F6;
-}
-
-footer p a:hover {
-    /* color: #FAF9F6; */
-    text-shadow: 1px 1px black;
+    color: #faf9f6;
 }
