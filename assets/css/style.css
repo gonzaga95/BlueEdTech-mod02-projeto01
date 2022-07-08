@@ -28,7 +28,7 @@ header {
 header a {
     text-decoration: none;
     color: #faf9f6;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 nav ul {
@@ -58,20 +58,15 @@ main {
 }
 
 main div#abertura {
-    padding: 0 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 1rem;
 }
 
 @media (max-width: 980px) {
     main div#abertura {
         display: flex;
         flex-direction: column;
-    }
-
-    main div#abertura h1 {
-        width: 100vw;
     }
 }
 
@@ -83,8 +78,39 @@ main section {
     padding: 2rem;
 }
 
-main section.tecnologias {
-    padding: 1rem;
+main section.apresentacao h2 {
+    padding: 1rem 0;
+}
+
+main section.contato h2 {
+    padding: 1rem 0;
+}
+
+.contato ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contato ul li a {
+    color: #faf9f6;
+    text-decoration: none;
+}
+
+main section.projetos h2 {
+    padding: 1rem 0;
+}
+
+main section.projetos div.amostras-projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+main section.tecnologias h2 {
+    padding: 1rem 0;
 }
 
 main section.tecnologias ul {
