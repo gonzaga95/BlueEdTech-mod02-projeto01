@@ -21,17 +21,26 @@ html {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 1rem;
+    align-items: center;
+}
+
+header p {
+    color: #faf9f6;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 header a {
-    text-decoration: none;
     color: #faf9f6;
+    text-decoration: none;
     font-size: 1rem;
 }
 
 nav ul {
+    margin-right: 2rem;
     display: flex;
     list-style: none;
 }
@@ -44,6 +53,7 @@ nav ul li {
     border-radius: 50%;
     max-width: 300px;
     padding: 0 1.5rem;
+    transition: filter 0.5 ease-in-out;
 }
 
 a:hover {
@@ -82,6 +92,12 @@ main section.apresentacao h2 {
     padding: 1rem 0;
 }
 
+main section.apresentacao p {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
 main section.contato h2 {
     padding: 1rem 0;
 }
@@ -95,6 +111,10 @@ main section.contato h2 {
 .contato ul li a {
     color: #faf9f6;
     text-decoration: none;
+}
+
+.contato .bi{
+    font-size: 3em;
 }
 
 main section.projetos h2 {
