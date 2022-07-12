@@ -17,6 +17,16 @@ html {
     );
     width: 100%;
     height: 100vh;
+}
+
+.dark {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(31, 31, 31, 1) 35%,
+        rgba(57, 57, 57, 1) 100%
+    );
+
     background-repeat: repeat-y;
 }
 
@@ -40,6 +50,14 @@ header a {
     font-size: 1rem;
 }
 
+header button {
+    border-width:2px;
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    font-size: .8rem;
+}
+
 nav ul {
     margin-right: 2rem;
     display: flex;
@@ -56,12 +74,7 @@ nav ul li {
     }
 
     header {
-        background-color: #faf9f6;
-        justify-content: center;
-    }
-
-    header p {
-        color: rgba(20, 20, 190, 1);
+        justify-content: space-between;
     }
 }
 
@@ -97,7 +110,6 @@ main div#abertura {
 
     #abertura h1 {
         font-size: 1.5rem;
-        text-align: justify;
     }
 }
 
@@ -123,6 +135,7 @@ main section.contato h2 {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .contato ul li a {
@@ -132,6 +145,10 @@ main section.contato h2 {
 
 .contato .bi {
     font-size: 3em;
+}
+
+.hide {
+    display: none;
 }
 
 main section.projetos h2 {
@@ -157,7 +174,7 @@ main section.tecnologias ul {
 }
 
 main section.tecnologias img {
-    max-width: 100px;
+    max-width: 10vw;
 }
 
 footer {
