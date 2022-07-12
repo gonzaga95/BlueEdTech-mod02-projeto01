@@ -7,8 +7,7 @@
     font-family: "Work Sans", Helvetica, sans-serif;
 }
 
-body,
-html {
+body {
     background: linear-gradient(
         90deg,
         rgba(12, 3, 158, 1) 0%,
