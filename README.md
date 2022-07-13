@@ -9,3 +9,6 @@ Os itens básicos que você precisa adicionar em seu projeto são:
 - Section com seus projetos (podem ser os feitos no M01);
 - Section com as tecnologias que você domina(pode adicionar HTML, CSS e JS);
 - Footer falando quem fez o site.
+
+> Disponível no Github Pages
+> https://gonzaga95.github.io/BlueEdTech-mod02-projeto01/
