@@ -25,8 +25,6 @@ body {
         rgba(31, 31, 31, 1) 35%,
         rgba(57, 57, 57, 1) 100%
     );
-
-    background-repeat: repeat-y;
 }
 
 header {
@@ -50,11 +48,11 @@ header a {
 }
 
 header button {
-    border-width:2px;
+    border-width: 2px;
     border-radius: 15px;
     width: 100px;
     height: 40px;
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 nav ul {
@@ -67,19 +65,9 @@ nav ul li {
     padding: 0.6rem;
 }
 
-@media (max-width: 600px) {
-    nav ul {
-        display: none;
-    }
-
-    header {
-        justify-content: space-between;
-    }
-}
-
 #perfil-foto {
     border-radius: 50%;
-    max-width: 30vw;
+    max-width: 250px;
     padding: 0 1.5rem;
     transition: filter 0.5 ease-in-out;
 }
@@ -101,19 +89,8 @@ main div#abertura {
     gap: 1rem;
 }
 
-@media (max-width: 900px) {
-    main div#abertura {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    #abertura h1 {
-        font-size: 1.5rem;
-    }
-}
-
 main section {
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 main section.apresentacao h2 {
@@ -121,9 +98,7 @@ main section.apresentacao h2 {
 }
 
 main section.apresentacao p {
-    max-width: 90%;
     text-align: center;
-    margin: 0 auto;
 }
 
 main section.contato h2 {
@@ -154,6 +129,10 @@ main section.projetos h2 {
     padding: 1rem 0;
 }
 
+#link-projetos {
+    display: none;
+}
+
 main section.projetos div.amostras-projetos {
     display: flex;
     flex-direction: column;
@@ -173,7 +152,7 @@ main section.tecnologias ul {
 }
 
 main section.tecnologias img {
-    max-width: 10vw;
+    max-width: 70px;
 }
 
 footer {
@@ -188,6 +167,24 @@ footer p a {
 }
 
 @media (max-width: 900px) {
+    main {
+        padding: .5rem;
+        margin: 0;
+    }
+
+    main div#abertura {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #abertura h1 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
     footer {
         background-color: #faf9f6;
         text-align: center;
@@ -199,5 +196,38 @@ footer p a {
 
     footer p a {
         color: rgba(20, 20, 190, 1);
+    }
+}
+
+@media (max-width: 700px) {
+    main section.projetos div.amostras-projetos {
+        display: none;
+    }
+
+    #link-projetos {
+        display: block;
+    }
+
+    #link-projetos ul {
+        /* list-style: none; */
+        padding-top: .5rem;
+    }
+
+    #link-projetos ul li {
+        padding-top: .3rem;
+    }
+    
+    #link-projetos ul a {
+        font-size: .8rem;
+        color: #faf9f6;
+        text-decoration: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
     }
 }
